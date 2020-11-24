@@ -1,2 +1,7 @@
 usps*
 .idea/
+build/*
+dist/*
+mlglue.egg-info/*
+mlglue/__pycache__
+*.xml
