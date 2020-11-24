@@ -11,4 +11,3 @@ setup(name='mlglue',
     packages=['mlglue'],
     install_requires=['sklearn', 'numpy', 'xgboost'],
 )
-

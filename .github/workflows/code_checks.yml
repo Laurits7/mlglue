@@ -23,3 +23,7 @@ jobs:
           flake8 . --count --exit-zero --max-complexity=10 --max-line-length=79 --statistics
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Unit tests
+        run: |
+          bash ./test/data.sh
+          python ./test/test_all.py

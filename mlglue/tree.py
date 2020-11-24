@@ -367,7 +367,7 @@ class BDT(object):
             outfile.write(
                 '<BinaryTree type="DecisionTree" boostWeight="0.0" '
                 + 'itree="{0}">\n'.format(
-                    itree, self.learning_rate
+                    itree
                 )
             )
             # convert internal representation to TMVA tree
