@@ -13,8 +13,10 @@ jobs:
         with:
           python-version: "2.7"
       - name: Install dependencies
-        run: |
-          pip install -r requirements.txt
+      - uses: BSFishy/pip-action@v1
+        with:
+          packages: flake8
+          requirements: requirements.txt
       - name: Lint with flake8
         run: |
           pip install flake8
