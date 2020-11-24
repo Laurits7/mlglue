@@ -1,14 +1,12 @@
 name: Code Quality
 
-on:
-  push:
-    paths:
-      - "**.py"
+on: [push]
 
 jobs:
   lint:
     name: Python Lint
     runs-on: ubuntu-latest
+    container: rootproject/root:latest
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-python@v2
