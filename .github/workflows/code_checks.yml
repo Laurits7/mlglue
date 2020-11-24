@@ -5,7 +5,7 @@ on: [push]
 jobs:
   lint:
     name: Python Lint
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-16.04
     container: rootproject/root:latest
     steps:
       - uses: actions/checkout@v2
